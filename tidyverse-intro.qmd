@@ -13,10 +13,6 @@ To start, what's the *tidyverse*? According to the [official website](https://ww
 
 > The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
 
-To start, what's tidyverse? According to the [official website](https://www.tidyverse.org/):
-
-> The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
-
 From my own experience, I can assure you that the *tidyverse* is all you need to carry out data analyses as neat and flexible as possible. By neat, I mean succinct code without any redundancy -- i.e., a single block of code (not a bunch of loose objects) doing all the desired tasks. Flexible, in turn, means the code is general enough. It depends on the nature of the task at hand, so take it more as a philosophy. For example, does the solution still work if the data is updated with new values? Or does it rely on changeable references such as column positions?
 
 Most of the time, writing neat and flexible code takes longer and requires a dose of creativity, but it surely pays off. Moreover, with practice, this will become more and more natural, and the cost will get significantly lower. In the next sections, we'll review the most used functions to go through all the steps of everyday data analysis using core tidyverse packages designed to Import, Wrangle, Program, and Plot.
@@ -971,7 +967,7 @@ Let's think about the process of making a graphic as a set of layers arranged se
 
 ```{r}
 #| eval: FALSE
-|> |> 
+cpi_tbl() |> 
   ggplot()
 ```
 
